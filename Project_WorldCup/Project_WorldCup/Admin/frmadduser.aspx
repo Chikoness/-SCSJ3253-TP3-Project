@@ -1,6 +1,7 @@
 ﻿<%@ Page Title="Admin - Add User" Language="C#" MasterPageFile="~/Admin/Site1.Master" AutoEventWireup="true" CodeBehind="frmadduser.aspx.cs" Inherits="Project_WorldCup.Admin.frmadduser" Theme="Theme2"%>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
-     <style type="text/css">
+     
+    <style type="text/css">
         .auto-style2 {
             width: 185px;
         }
@@ -8,9 +9,9 @@
 </asp:Content>
 
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-     <br />
-    <asp:Panel ID="Panel1" runat="server" GroupingText="Add User" HorizontalAlign="Justify">
-   
+     
+   <div class="container">
+       <h3>Manage User</h3>
     <asp:ValidationSummary ID="ValidationSummary1" runat="server" ForeColor="Red" />
      <div class="table-responsive">
    <table class="table mg-b-0">
@@ -64,5 +65,5 @@
         </tr>
     </table>
          </div>
-        </asp:Panel>
+       </div>
 </asp:Content>
