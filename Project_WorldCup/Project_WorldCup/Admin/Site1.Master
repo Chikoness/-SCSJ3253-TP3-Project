@@ -4,31 +4,70 @@
 
 <html>
 <head runat="server">
-    <title></title>
-    <asp:ContentPlaceHolder ID="head" runat="server">
+        <title>Admin - SiteMaster</title>
+     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
+     <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-90680653-2"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-90680653-2');
+    </script>
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+   
+
+    <!-- Meta -->
+    <meta name="description" content="Responsive Bootstrap 4 Dashboard Template">
+    <meta name="author" content="BootstrapDash">
+
+
+
+    <!-- vendor css -->
+    <link href="../lib/fontawesome-free/css/all.min.css" rel="stylesheet">
+    <link href="../lib/ionicons/css/ionicons.min.css" rel="stylesheet">
+    <link href="../lib/typicons.font/typicons.css" rel="stylesheet">
+    <link href="../lib/flag-icon-css/css/flag-icon.min.css" rel="stylesheet">
+
+    <!-- azia CSS -->
+    <link rel="stylesheet" href="../css/azia.css">
 </head>
 <body>
    
     <form id="form1" runat="server">
-        <div id="menu" class="menu-bg">
-        <ul class="left">
-            <li><a href="Dashboard.aspx">
-                <asp:Label ID="Label1" runat="server" Text="Dashboard" CssClass="textMenu"></asp:Label></a></li>
-            <li><a href="frmadduser.aspx">
-                <asp:Label ID="Label2" runat="server" Text="Add User" CssClass="textMenu"></asp:Label></a></li>
-             
-             <li class="profile"><a href="frmlogin.aspx">
-                <asp:Label ID="Label5" runat="server" Text="Logout" CssClass="textMenu"></asp:Label></a>
-            </li>
-        </ul>
+   
+       <div class="az-header">
+      <div class="container">
+        <div class="az-header-left">
+          <a href="Dashboard.aspx" class="az-logo"><span></span> Admin FIFA QATAR</a>
+        
+        </div>
        
-    </div>
-      
+          <ul class="nav">
+            <li class="nav-item active show">
+              <a href="Dashboard.aspx" class="nav-link"><i class="typcn typcn-chart-area-outline"></i> Dashboard</a>
+            </li>
+           
+            <li class="nav-item">
+              <a href="frmadduser.aspx" class="nav-link"><i class="typcn typcn-user-add-outline"></i> Add User</a>
+            </li>
+            <li class="nav-item">
+              <a href="frmlogin.aspx" class="nav-link"><i class="ion-log-out"></i> Logout</a>
+            </li>
+          
+          </ul>
+        </div>
+          </div>
+       
             <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
             </asp:ContentPlaceHolder>
        
     </form>
-
 </body>
 </html>
